@@ -1,9 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-
-const PREFIX = "b!";
-
-const embed = new Discord.RichEmbed();
+const PREFIX = "!";
 
 bot.on("ready", () => {
   console.log("estoy listo!");
@@ -13,10 +10,10 @@ bot.on("ready", () => {
 });
 
 bot.on("guildMemberAdd", member => {
-  const canal = member.guild.channels.find(
+  const channel = member.guild.channels.find(
     channel => channel.id === "738529769477505106"
   );
-  const nuevomiembro = embed
+  const miembro = new Discord.RichEmbed()
     .addField(
       "BIENVENID@",
       "<@" +
@@ -26,17 +23,17 @@ bot.on("guildMemberAdd", member => {
     .setColor(0x2f3136)
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif"
-    );
+    )
 var role = member.guild.roles.find("id", "707939297763917866");
   member.addRole(role);
-  canal.sendEmbed(nuevomiembro);
+  channel.sendEmbed(miembro);
   });
 
 bot.on("guildMemberRemove", member => {
-  const canal = member.guild.channels.find(
+  const channel = member.guild.channels.find(
     channel => channel.id === "738529769477505106"
   );
-  const adiosmiembro = embed
+  const miembro = new Discord.RichEmbed()
     .addField(
       "SE NOS HA IDO UN ALIADO",
       "<@" +
@@ -47,8 +44,8 @@ bot.on("guildMemberRemove", member => {
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/716403231705792594/738532229109645330/giphy_2.gif"
   
-    );
-  canal.sendEmbed(adiosmiembro);
+    )
+  channel.sendEmbed(miembro);
 });
 
 bot.on("message", message => {
@@ -65,10 +62,11 @@ bot.on("message", message => {
         );
       message.channel.bulkDelete(args[1]);
       break;
+      
     //fin clear
 
     case "pan":
-      const pan = embed
+      const pan = new Discord.RichEmbed()
         .setTitle("MI PAN SUSUSUM")
         .addField(
           "LYRICS:",
