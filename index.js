@@ -30,6 +30,7 @@ bot.on("guildMemberAdd", member => {
 var role = member.guild.roles.find("id", "707939297763917866");
   member.addRole(role);
   canal.sendEmbed(nuevomiembro);
+  break;
   });
 
 bot.on("guildMemberRemove", member => {
@@ -49,6 +50,7 @@ bot.on("guildMemberRemove", member => {
   
     );
   canal.sendEmbed(adiosmiembro);
+  break;
 });
 
 bot.on("message", message => {
