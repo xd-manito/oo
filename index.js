@@ -5,7 +5,7 @@ const PREFIX = "!";
 bot.on("ready", () => {
   console.log("estoy listo!");
   bot.user
-    .setActivity("a Heriberto", { type: "LISTENING" })
+    .setActivity("a Heriberto Santiago", { type: "LISTENING" })
     .catch(console.error);
 });
 
