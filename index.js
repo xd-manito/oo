@@ -5,7 +5,7 @@ const PREFIX = "!";
 bot.on("ready", () => {
   console.log("estoy listo!");
   bot.user
-    .setActivity("a CLASE CON LOS PANAS", { type: "WATCHING" })
+    .setActivity("a Heriberto", { type: "LISTENING" })
     .catch(console.error);
 });
 
