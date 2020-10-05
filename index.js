@@ -67,6 +67,9 @@ bot.on("message", message => {
       
     //fin clear
 
+    case "el pepe":
+      message.channel.send("EL PEPE")
+      
     case "pan":
       const pan = new Discord.RichEmbed()
         .setTitle("MI PAN SUSUSUM")
