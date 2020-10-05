@@ -67,7 +67,7 @@ bot.on("message", message => {
       
     //fin clear
 
-    case "el pepe":
+    case "pepe":
       message.channel.send("EL PEPE")
        break;
       
