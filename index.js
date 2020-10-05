@@ -95,13 +95,6 @@ bot.on("message", message => {
    if(message.author.bot) return;
    message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
 }
-  
-      
-  var role = member.guild.roles.find("id", "738890591827394581");
-  if(message.content.startsWith("!mentionamong")){
-   if(message.author.bot) return;
-   message.channel.mention((role)"Server para el Among Us: https://discord.gg/cZdYnbU")
-                           }
-                           
+                            
 });
 bot.login(process.env.BOT_TOKEN);
