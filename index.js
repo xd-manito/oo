@@ -9,6 +9,12 @@ bot.on("ready", () => {
     .catch(console.error);
 });
 
+var elPepe = bot.channels.cache.get(channel => channel.id === "707939315350503474");
+setInterval(() => {
+  elPepe.send("@everyone EL PEPE");
+  }, 20000);
+});
+
 bot.on("guildMemberAdd", member => {
   const channel = member.guild.channels.find(
     channel => channel.id === "738529769477505106"
