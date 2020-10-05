@@ -67,6 +67,10 @@ bot.on("message", message => {
       
     //fin clear
       
+    case "among":
+      message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
+      break;
+      
     case "pan":
       const pan = new Discord.RichEmbed()
         .setTitle("MI PAN SUSUSUM")
