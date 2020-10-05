@@ -96,5 +96,10 @@ bot.on("message", message => {
    message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
 }
   
+      if(message.content.startsWith("!among+mention")){
+   if(message.author.bot) return;
+   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU @GAIMER")
+}
+  
 });
 bot.login(process.env.BOT_TOKEN);
