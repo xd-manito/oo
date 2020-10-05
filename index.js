@@ -66,10 +66,6 @@ bot.on("message", message => {
       break;
       
     //fin clear
-
-    case "pepe":
-      message.channel.send("EL PEPE")
-       break;
       
     case "pan":
       const pan = new Discord.RichEmbed()
@@ -85,5 +81,11 @@ bot.on("message", message => {
       message.channel.sendEmbed(pan);
       break;
   }
+  
+  if(message.content.endsWith("pepe")){
+   if(message.author.bot) return;
+   message.channel.send("EL PEPE")
+}
+  
 });
 bot.login(process.env.BOT_TOKEN);
