@@ -69,6 +69,7 @@ bot.on("message", message => {
 
     case "el pepe":
       message.channel.send("EL PEPE")
+       break;
       
     case "pan":
       const pan = new Discord.RichEmbed()
