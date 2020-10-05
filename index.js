@@ -98,7 +98,7 @@ bot.on("message", message => {
   
       if(message.content.startsWith("!amongmention")){
    if(message.author.bot) return;
-   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU @GAIMER")
+   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU @738890591827394581")
 }
   
 });
