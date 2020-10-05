@@ -91,5 +91,10 @@ bot.on("message", message => {
    message.channel.send("EL PEPE")
 }
   
+    if(message.content.startsWith("!among")){
+   if(message.author.bot) return;
+   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
+}
+  
 });
 bot.login(process.env.BOT_TOKEN);
