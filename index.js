@@ -98,7 +98,9 @@ bot.on("message", message => {
   
       if(message.content.startsWith("!mentionamong")){
    if(message.author.bot) return;
-   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU @738890591827394581")
+   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU""<@""738890591827394581" +
+        member.id +
+        "https://discord.gg/cZdYnbU @738890591827394581")
 }
   
 });
