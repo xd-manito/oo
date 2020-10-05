@@ -102,7 +102,7 @@ bot.on("message", message => {
         member.id +
         "https://discord.gg/cZdYnbU @738890591827394581")
         ">"
-}
+)}
   
 });
 bot.login(process.env.BOT_TOKEN);
