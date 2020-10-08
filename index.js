@@ -91,11 +91,6 @@ bot.on("message", message => {
    message.channel.send("EL PEPE")
 }
   
-    if(message.content.startsWith("!among")){
-   if(message.author.bot) return;
-   message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
-}
-  
     if(message.content.startsWith("!updateamong")){
    if(message.author.bot) return;
    message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
