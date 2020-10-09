@@ -6,7 +6,11 @@ bot.on("ready", () => {
   console.log("estoy listo!");
   bot.user
     .setActivity("a Heriberto Santiago", { type: "LISTENING" })
+  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
     .catch(console.error);
+  bot.user.setStatus("idle")
+  .then(console.log)
+  .catch(console.error);
 });
 
 bot.on("guildMemberAdd", member => {
