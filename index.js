@@ -98,6 +98,7 @@ bot.on("message", message => {
   if(message.content.startsWith("maikol")){
    if(message.author.bot) return;
    message.channel.send("tu **ldita...")
+   message.channel.send("tu no halla...")
 }
   
 });
