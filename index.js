@@ -67,7 +67,7 @@ bot.on("message", message => {
       
     //fin clear
 
-client.on("message",msg=>{
+bot.on("message",msg=>{
     if(msg.content==="say test 123"){
         const voiceChannel = msg.member.voice.channel;
         voiceChannel.join().then(connection => {
