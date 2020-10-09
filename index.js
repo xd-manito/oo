@@ -66,7 +66,11 @@ bot.on("message", message => {
       break;
       
     //fin clear
-      
+
+    if(message.content==="ola o"){
+        const voiceChannel = message.member.voice.channel;
+        voiceChannel.join()     
+ 
     case "among":
       message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
       break;
