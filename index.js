@@ -94,6 +94,12 @@ bot.on("message", message => {
    if(message.author.bot) return;
    message.channel.send("EL PEPE")
 }
-                            
+  
+  if(message.content.statsWith("maikol")){
+   if(message.author.bot) return;
+   message.channel.send("tu **ldita...")
+   message.channel.send("tu no halla...")
+}
+  
 });
 bot.login(process.env.BOT_TOKEN);
