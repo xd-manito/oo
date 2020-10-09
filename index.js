@@ -9,8 +9,6 @@ bot.on("ready", () => {
     .catch(console.error);
 });
 
-
-
 bot.on("guildMemberAdd", member => {
   const channel = member.guild.channels.find(
     channel => channel.id === "738529769477505106"
@@ -65,19 +63,8 @@ bot.on("message", message => {
       message.channel.bulkDelete(args[1]);
       break;
       
-    //fin clear
-
-
-    if(msg.content==="say test 123"){
-        const voiceChannel = msg.member.voice.channel;
-        voiceChannel.join().then(connection => {
-            const stream = discordTTS.getVoiceStream("this is a test cookie");
-            const dispatcher = connection.play(stream);
-            dispatcher.on("finish",()=>voiceChannel.leave())
-        });
-    
-   
- 
+    //fin clear 
+      
     case "among":
       message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
       break;
