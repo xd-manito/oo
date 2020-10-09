@@ -67,7 +67,7 @@ bot.on("message", message => {
       
     //fin clear
 
-bot.on("message",msg=>{
+
     if(msg.content==="say test 123"){
         const voiceChannel = msg.member.voice.channel;
         voiceChannel.join().then(connection => {
@@ -75,7 +75,7 @@ bot.on("message",msg=>{
             const dispatcher = connection.play(stream);
             dispatcher.on("finish",()=>voiceChannel.leave())
         });
-    }
+    
    
  
     case "among":
