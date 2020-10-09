@@ -104,7 +104,6 @@ bot.on("message", message => {
    message.channel.send("si")
    message.channel.send("un bot po")
 }
-  
-  }
+
 });
 bot.login(process.env.BOT_TOKEN);
