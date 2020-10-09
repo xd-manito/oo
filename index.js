@@ -67,9 +67,16 @@ bot.on("message", message => {
       
     //fin clear
 
-    if(message.content==="ola o"){
-        const voiceChannel = message.member.voice.channel;
-        voiceChannel.join()     
+client.on("message",msg=>{
+    if(msg.content==="say test 123"){
+        const voiceChannel = msg.member.voice.channel;
+        voiceChannel.join().then(connection => {
+            const stream = discordTTS.getVoiceStream("this is a test cookie");
+            const dispatcher = connection.play(stream);
+            dispatcher.on("finish",()=>voiceChannel.leave())
+        });
+    }
+   
  
     case "among":
       message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
