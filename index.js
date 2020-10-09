@@ -95,7 +95,7 @@ bot.on("message", message => {
    message.channel.send("EL PEPE")
 }
   
-  if(message.content.statsWith("maikol")){
+  if(message.content.startsWith("maikol")){
    if(message.author.bot) return;
    message.channel.send("tu **ldita...").then message.channel.send("tu no halla...")
 }
