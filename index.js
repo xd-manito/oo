@@ -103,12 +103,6 @@ bot.on("message", message => {
    message.channel.send("tu no halla...")
 }
   
-  if(message.content.startsWith("un bot po")){
-   if(message.author.bot) return;
-   message.channel.send("si")
-   message.channel.send("un bot po")
-}
-  
   if(message.content.startsWith("-t")){
    if(message.author.bot) return;
    message.channel.send("T E M A Z O")
