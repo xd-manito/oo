@@ -77,20 +77,13 @@ bot.on("message", message => {
       message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
       break;      
       
-    case "pan":
-      const pan = new Discord.RichEmbed()
-        .setTitle("MI PAN SUSUSUM")
-        .addField(
-          "LYRICS:",
-          "Mi pan su su sum, su su su, mi pan yakakus, ñam ñam ñam, mi paaaan, su su su su su su..."
-        )
-        .setColor(0x2f3136)
-        .setThumbnail(
-          "https://cdn.discordapp.com/attachments/709124080137142334/738518782980653086/giphy.gif"
-        )
-      message.channel.sendEmbed(pan);
-      break;
-  }
+    
+  if(message.content.startsWith("un bot po")){
+   if(message.author.bot) return;
+    message.channel.send("si")
+    message.channel.send("un bot po")
+ }
+
   
   if(message.content.endsWith("pepe")){
    if(message.author.bot) return;
