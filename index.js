@@ -76,14 +76,6 @@ bot.on("message", message => {
     case "updateamong":
       message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
       break;      
-      
-    
-  if(message.content.startsWith("un bot po")){
-   if(message.author.bot) return;
-    message.channel.send("si")
-    message.channel.send("un bot po")
- }
-
   
   if(message.content.endsWith("pepe")){
    if(message.author.bot) return;
@@ -94,6 +86,12 @@ bot.on("message", message => {
    if(message.author.bot) return;
    message.channel.send("tu **ldita...")
    message.channel.send("tu no halla...")
+}
+  
+  if(message.content.startsWith("un bot po")){
+   if(message.author.bot) return;
+   message.channel.send("si")
+   message.channel.send("un bot po")
 }
   
   if(message.content.startsWith("-t")){
