@@ -5,7 +5,7 @@ const PREFIX = "!";
 bot.on("ready", () => {
   console.log("estoy listo!");
   bot.user
-    .setActivity("a Heriberto Santiago", { type: "LISTENING" })
+    .setActivity("#DigamosleAAdriQueEsLoMejorDelMundo", { type: "STREAMING" })
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
     .catch(console.error);
   bot.user.setStatus("online")
