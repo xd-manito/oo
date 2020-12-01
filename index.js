@@ -59,6 +59,17 @@ bot.on("message", message => {
    message.channel.send("tu **ldita...")
    message.channel.send("tu no halla...")
 }
+ 
+  if(message.content === ("perro guaton")){
+   if(message.author.bot) return;
+   message.channel.send("perro guatOn")
+   message.channel.send("PERRO GUATON")
+   message.channel.send("perro guaton")
+   message.channel.send("¿quién es este perro?")
+   message.channel.send("ES EL PERRO GUATON")
+   message.channel.send("perro guatOn")
+   message.channel.send("PERRO GUATON")
+}
   
   if(message.content === ("un bot po")){
    if(message.author.bot) return;
