@@ -82,5 +82,10 @@ bot.on("message", message => {
    message.channel.send("T E M A Z O")
 }
 
+  if(message.content.startsWith ("epico")){
+   if(message.author.bot) return;
+   message.channel.send("si")
+}
+ 
 });
 bot.login(process.env.BOT_TOKEN);
