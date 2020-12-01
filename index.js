@@ -19,25 +19,6 @@ bot.on("guildMemberAdd", guildMember => {
   guildMember.guild.channels.cache.get("738529769477505106").send(`Bienvenidx <@${guildMember.user.id}> esto esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los te identifiquen. https://media.discordapp.net/attachments/716403231705792594/738532236290293810/giphy_3.gif`)
 });
 
-bot.on("guildMemberRemove", member => {
-  const channel = member.guild.channels.find(
-    channel => channel.id === "738529769477505106"
-  );
-  const miembro = new Discord.RichEmbed()
-    .addField(
-      "SE NOS HA IDO UN ALIADO",
-      "<@" +
-        member.id +
-        "> hasta luego pana :,v."
-    )
-    .setColor(0x2f3136)
-    .setThumbnail(
-      "https://cdn.discordapp.com/attachments/716403231705792594/738532229109645330/giphy_2.gif"
-  
-    )
-  channel.sendEmbed(miembro);
-});
-
 bot.on("message", message => {
   let args = message.content.substring(PREFIX.length).split(" ");
   switch (args[0]) {
