@@ -13,10 +13,22 @@ bot.on("ready", () => {
   .catch(console.error);
 });
 
-bot.on("guildMemberAdd", member => {
-  const channel = member.guild.channels.find(
-    channel => channel.id === "738529769477505106"
-  );
+bot.on("guildMemberAdd", guildMember => {
+  const miembro = new Discord.RichEmbed()
+    .addField(
+      "BIENVENID@",
+      "<@" +
+        member.id +
+        "> esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los moderadores te identifiquen."
+    )
+    .setColor(0x2f3136)
+    .setThumbnail(
+      "https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif"
+    )  
+  let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === "UNKNOWN");
+  guildMember.roles.add(welcomeRole);
+  guildMember.guild.channels.cache.get("738529769477505106").send(miembro)});
+
   const miembro = new Discord.RichEmbed()
     .addField(
       "BIENVENID@",
@@ -28,10 +40,6 @@ bot.on("guildMemberAdd", member => {
     .setThumbnail(
       "https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif"
     )
-var role = member.guild.roles.find("id", "707939297763917866");
-  member.addRole(role);
-  channel.sendEmbed(miembro);
-  });
 
 bot.on("guildMemberRemove", member => {
   const channel = member.guild.channels.find(
