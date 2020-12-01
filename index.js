@@ -15,11 +15,7 @@ bot.on("ready", () => {
 
 bot.on("guildMemberAdd", guildMember => {
   const miembro = new Discord.RichEmbed()
-    .addField(
-      "BIENVENID@",
-      "<@" +
-        member.id +
-        "> esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los moderadores te identifiquen."
+    .addField(`Bienvenido <@$guildMember.user.id}> esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los moderadores te identifiquen.`
     )
     .setColor(0x2f3136)
     .setThumbnail(
