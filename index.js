@@ -89,7 +89,7 @@ bot.on("message", message => {
 
   if(message.content === (":o")){
    if(message.author.bot) return;
-   message.reply("soi la ostia, lo sé B)")
+   reply.message("soi la ostia, lo sé B)")
 }
   
 });
