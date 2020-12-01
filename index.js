@@ -20,7 +20,7 @@ bot.on("guildMemberAdd", guildMember => {
     .setThumbnail("https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif")  
   let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === "UNKNOWN");
   guildMember.roles.add(welcomeRole);
-  guildMember.guild.channels.cache.get("738529769477505106").send(miembro)});
+  guildMember.guild.channels.cache.get("738529769477505106").sendEmbed(miembro)});
 
   const miembro = new Discord.RichEmbed()
     .addField(
@@ -52,7 +52,6 @@ bot.on("guildMemberRemove", member => {
     )
   channel.sendEmbed(miembro);
 });
-break;
 
 bot.on("message", message => {
   let args = message.content.substring(PREFIX.length).split(" ");
