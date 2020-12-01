@@ -86,6 +86,11 @@ bot.on("message", message => {
    if(message.author.bot) return;
    message.channel.send("si")
 }
- 
+
+  if(message.content === (":o")){
+   if(message.author.bot) return;
+   message.reply("soi la ostia, lo sé B)")
+}
+  
 });
 bot.login(process.env.BOT_TOKEN);
