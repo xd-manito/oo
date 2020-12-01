@@ -15,12 +15,9 @@ bot.on("ready", () => {
 
 bot.on("guildMemberAdd", guildMember => {
   const miembro = new Discord.RichEmbed()
-    .addField(`Bienvenido <@$guildMember.user.id}> esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los moderadores te identifiquen.`
-    )
+    .addField(`Bienvenido <@$guildMember.user.id}> esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los moderadores te identifiquen.`)
     .setColor(0x2f3136)
-    .setThumbnail(
-      "https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif"
-    )  
+    .setThumbnail("https://cdn.discordapp.com/attachments/716403231705792594/738532236290293810/giphy_3.gif")  
   let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === "UNKNOWN");
   guildMember.roles.add(welcomeRole);
   guildMember.guild.channels.cache.get("738529769477505106").send(miembro)});
@@ -55,6 +52,7 @@ bot.on("guildMemberRemove", member => {
     )
   channel.sendEmbed(miembro);
 });
+break;
 
 bot.on("message", message => {
   let args = message.content.substring(PREFIX.length).split(" ");
