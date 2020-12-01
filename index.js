@@ -14,7 +14,7 @@ bot.on("ready", () => {
 });
 
 bot.on("guildMemberAdd", guildMember => {
-  let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === "UNKNOW");
+  let welcomeRole = guildMember.guild.roles.cache.get("707939297763917866");
   guildMember.roles.add(welcomeRole);
   guildMember.guild.channels.cache.get("738529769477505106").send(`Bienvenidx <@${guildMember.user.id}> esto esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los te identifiquen. https://media.discordapp.net/attachments/716403231705792594/738532236290293810/giphy_3.gif`)
 });
