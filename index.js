@@ -49,24 +49,24 @@ bot.on("message", message => {
       break;      
  } 
 
-  if(message.content.endsWith("pepe")){
+  if(message.content === ("el pepe")){
    if(message.author.bot) return;
    message.channel.send("EL PEPE")
 }
   
-  if(message.content.startsWith("maikol")){
+  if(message.content === ("maikol")){
    if(message.author.bot) return;
    message.channel.send("tu **ldita...")
    message.channel.send("tu no halla...")
 }
   
-  if(message.content.startsWith("un bot po")){
+  if(message.content === ("un bot po")){
    if(message.author.bot) return;
    message.channel.send("si")
    message.channel.send("un bot po")
 }
   
-  if(message.content.startsWith("-t")){
+  if(message.content === ("-t")){
    if(message.author.bot) return;
    message.channel.send("T E M A Z O")
 }
