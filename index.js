@@ -47,7 +47,16 @@ bot.on("message", message => {
     case "updateamong":
       message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
       break;      
- } 
+ }
+  
+if (message.content === "im lonely bro") {
+const voiceChannel = message.member.voice.channel;
+if(!voiceChannel) return message.channel.send("aaa, no te veo en ningún canal de voz:( ¡intenta entrar a uno para acompañarte!");
+const permissions = voiceChannel.permissionsFor(message.bot.user);
+if (permissions.has("CONNECT")) return message.channel.send ("te hace falta un poco de poder, habla con algún moderador para ver qué puede hacer por ti.");
+const connection = await voiceChannel.join();
+message.channel.send("aquí estoy bro")
+}
 
   if(message.content === ("el pepe")){
    if(message.author.bot) return;
