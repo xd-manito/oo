@@ -5,7 +5,7 @@ const PREFIX = "!";
 bot.on("ready", () => {
   console.log("estoy listo!");
   bot.user
-    .setActivity("#DigamosleAAdriQueEsLoMejorDelMundo", { type: "STREAMING" })
+    .setActivity("si", { type: "STREAMING" })
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
     .catch(console.error);
   bot.user.setStatus("online")
@@ -48,15 +48,6 @@ bot.on("message", message => {
       message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
       break;      
  }
-  
-if (message.content === "im lonely bro") {
-const voiceChannel = message.member.voice.channel;
-if(!voiceChannel) return message.channel.send("aaa, no te veo en ningún canal de voz:( ¡intenta entrar a uno para acompañarte!");
-const permissions = voiceChannel.permissionsFor(message.bot.user);
-if (permissions.has("CONNECT")) return message.channel.send ("te hace falta un poco de poder, habla con algún moderador para ver qué puede hacer por ti.");
-const connection = await voiceChannel.join();
-message.channel.send("aquí estoy bro")
-}
 
   if(message.content === ("el pepe")){
    if(message.author.bot) return;
@@ -96,10 +87,5 @@ message.channel.send("aquí estoy bro")
    message.channel.send("si")
 }
 
-  if(message.content === (":o")){
-   if(message.author.bot) return;
-   message.channel.send("soi la ostia, lo sé B)")
-}
-  
 });
 bot.login(process.env.BOT_TOKEN);
