@@ -8,7 +8,7 @@ bot.on("ready", () => {
     .setActivity("si", { type: "STREAMING" })
   .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
     .catch(console.error);
-  bot.user.setStatus("online")
+  bot.user.setStatus("dnd")
   .then(console.log)
   .catch(console.error);
 });
