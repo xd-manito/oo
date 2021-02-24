@@ -4,11 +4,10 @@ const PREFIX = "!";
 
 bot.on("ready", () => {
   console.log("estoy listo!");
-  bot.user
-    .setActivity("si", { type: "STREAMING" })
-  .then(presence => console.log(`Activity set to ${presence.activities[0].name}`))
-    .catch(console.error);
-  bot.user.setStatus("dnd")
+client.user.setActivity("si", {
+    type:"STREAMING",
+    url: "https://www.twitch.tv/maiatler"
+});
   .then(console.log)
   .catch(console.error);
 });
