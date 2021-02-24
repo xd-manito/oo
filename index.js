@@ -10,6 +10,7 @@ bot.user.setActivity("si", {
   .then(console.log)
   .catch(console.error);
 });
+  });
 
 bot.on("guildMemberAdd", guildMember => {
   let welcomeRole = guildMember.guild.roles.cache.get("707939297763917866");
