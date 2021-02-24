@@ -7,7 +7,6 @@ bot.on("ready", () => {
 client.user.setActivity("si", {
     type:"STREAMING",
     url: "https://www.twitch.tv/maiatler"
-});
   .then(console.log)
   .catch(console.error);
 });
