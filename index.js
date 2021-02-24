@@ -37,11 +37,7 @@ bot.on("message", message => {
     case "among":
       message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
       break;
-      
-    case "val":
-      message.channel.send("@valoran't pleier")
-      break;
-      
+         
     case "updateamong":
       message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
       break;      
