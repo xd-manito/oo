@@ -39,7 +39,7 @@ bot.on("message", message => {
       break;
       
     case "val":
-      message.channel.send(`<@${780872558798438410}>`)
+      message.channel.send(`@valoran't pleier`)
       break;
       
     case "updateamong":
