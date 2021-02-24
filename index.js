@@ -5,8 +5,7 @@ const PREFIX = "!";
 bot.on("ready", () => {
   console.log("estoy listo!");
 bot.user.setActivity("si", {
-    type:"STREAMING",
-    url: "https://www.twitch.tv/maiatler"
+    type:"dnd"
   .then(console.log)
   .catch(console.error);
   });
@@ -39,8 +38,8 @@ bot.on("message", message => {
       message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
       break;
       
-    case "wo789714mo3":
-      message.channel.send("@everyone juegmos VALORANT :D https://playvalorant.com/en-us/")
+    case "val":
+      message.channel.send(`<@>`)
       break;
       
     case "updateamong":
@@ -48,28 +47,6 @@ bot.on("message", message => {
       break;      
  }
 
-  if(message.content === ("el pepe")){
-   if(message.author.bot) return;
-   message.channel.send("EL PEPE")
-}
-  
-  if(message.content === ("maikol")){
-   if(message.author.bot) return;
-   message.channel.send("tu **ldita...")
-   message.channel.send("tu no halla...")
-}
- 
-  if(message.content === ("perro guaton")){
-   if(message.author.bot) return;
-   message.channel.send("perro guatOn")
-   message.channel.send("PERRO GUATON")
-   message.channel.send("perro guaton")
-   message.channel.send("¿quién es este perro?")
-   message.channel.send("ES EL PERRO GUATON")
-   message.channel.send("perro guatOn")
-   message.channel.send("PERRO GUATON")
-}
-  
   if(message.content === ("un bot po")){
    if(message.author.bot) return;
    message.channel.send("si")
