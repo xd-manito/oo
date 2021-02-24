@@ -9,7 +9,6 @@ bot.user.setActivity("si", {
     url: "https://www.twitch.tv/maiatler"
   .then(console.log)
   .catch(console.error);
-};
   });
 
 bot.on("guildMemberAdd", guildMember => {
