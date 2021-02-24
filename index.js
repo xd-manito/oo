@@ -12,13 +12,6 @@ bot.user.setActivity("si", {
 };
   });
 
-bot.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'UNKNOWN');
-
-    guildMember.roles.add(welcomeRole);
-    guildMember.guild.channels.cache.get('YOU_CHANNEL_ID').send(`Bienvenidx <@${guildMember.user.id}> esto esto es CLASE CON LOS PANAS, necesitamos comprobar tu identidad así que #por-favor-identificate en ese canal, yo soy solo un bot entonces espera a que uno de los te identifiquen.`)
-});
-
 bot.on("guildMemberAdd", guildMember => {
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'UNKNOWN');
   guildMember.roles.add(welcomeRole);
