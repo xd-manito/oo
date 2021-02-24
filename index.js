@@ -4,7 +4,7 @@ const PREFIX = "!";
 
 bot.on("ready", () => {
   console.log("estoy listo!");
-client.user.setActivity("si", {
+bot.user.setActivity("si", {
     type:"STREAMING",
     url: "https://www.twitch.tv/maiatler"
   .then(console.log)
