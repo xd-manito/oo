@@ -4,9 +4,8 @@ const PREFIX = "!";
 
 bot.on("ready", () => {
   console.log("estoy listo!");
-bot.user.setActivity("si", {
-    type:"dnd"
-  .then(console.log)
+bot.user.setActivity("The SIMPS Server", {
+    type:"WATCHING"})
   .catch(console.error);
   });
 
