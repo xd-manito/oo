@@ -31,32 +31,29 @@ bot.on("message", message => {
         );
       message.channel.bulkDelete(args[1]);
       break;
-      
     //fin clear 
       
     case "among":
-      message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU")
+      message.channel.send("Server para el Among Us: https://discord.gg/cZdYnbU ; Descargar-Acutalizar Among Us usa el comando: `!linkamong`")
       break;
          
-    case "updateamong":
-      message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/")
+    case "linkamong":
+      message.channel.send("https://thetecnosanty.com/among-us-para-pc-ultima-version/ ; Servidor de Among Us usa el comando: `!among`")
       break;      
- }
 
-  if(message.content === ("un bot po")){
-   if(message.author.bot) return;
-   message.channel.send("si")
-   message.channel.send("un bot po")
-}
-  
-  if(message.content === ("-t")){
-   if(message.author.bot) return;
-   message.channel.send("T E M A Z O")
 }
 
-  if(message.content.startsWith ("epico")){
-   if(message.author.bot) return;
-   message.channel.send("si")
+if(message.content === ("un bot po")){
+  if(message.author.bot) return;
+  message.channel.send("si")
+  message.channel.send("un bot po")
+  message.react("765193505693237248")
+}
+ 
+ if(message.content === ("-t")){
+  if(message.author.bot) return;
+  message.channel.send("T E M A Z O")
+  message.react("768483493365284884")
 }
 
 });
