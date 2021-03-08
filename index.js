@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const PREFIX = "!";
 
+var Scraper = require('images-scraper');
+
 bot.on("ready", () => {
   console.log("estoy listo!");
 bot.user.setActivity("The SIMPS Server", {
@@ -56,5 +58,17 @@ if(message.content === ("un bot po")){
   message.react("768483493365284884")
 }
 
+const google = new Scraper({
+  puppeteer: {
+    headless: false,
+  },
+});
+
+(async () => {
+  const results = await google.scrape('banana', 200);
+  console.log('results', results);
+})();
+
+ 
 });
 bot.login(process.env.BOT_TOKEN);
