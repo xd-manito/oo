@@ -43,10 +43,10 @@ bot.on("message", message => {
 
 }
 
-if(message.content === ("un bot po")){
+if(message.content === ("un simp po")){
   if(message.author.bot) return;
   message.channel.send("si")
-  message.channel.send("un bot po")
+  message.channel.send("un simp po")
   message.react("765193505693237248")
 }
  
