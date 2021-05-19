@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const PREFIX = "b!";
+const PREFIX = "u!";
 
 bot.on("ready", () => {
   console.log("estoy listo!");
