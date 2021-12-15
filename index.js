@@ -54,9 +54,6 @@ if(message.content === ("un simp po")){
   if(message.author.bot) return;
   message.channel.send("T E M A Z O")
   message.react("768483493365284884")
-}
-
-message.react("🤝");
 
 };
   
